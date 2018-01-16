@@ -1,5 +1,7 @@
 # [Skeleton-Sass-CSSGrid]
 
+UNDER DEVELOPMENT, NOT YET FUNCTIONAL
+
 CSS Grid added to Sass Version of Skeleton (2.0.4): A Dead Simple, Responsive. It currently featues a stable version of Skeleton 2.0.4
 Build to use with Visual Studio Code. Try it, it's awesome.
 
