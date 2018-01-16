@@ -8,10 +8,10 @@
 * Sass Version by Seth Coelen https://github.com/whatsnewsaes
 */
 
-@function grid-column-width($n) {
-  @return $column-width * $n - ($column-margin*($total-columns - $n)/$total-columns);
-}
+// @function grid-column-width($n) {
+//   @return $column-width * $n - ($column-margin*($total-columns - $n)/$total-columns);
+// }
 
-@function grid-offset-length($n) {
-  @return grid-column-width($n) + $column-margin;
-}
+// @function grid-offset-length($n) {
+//   @return grid-column-width($n) + $column-margin;
+// }
