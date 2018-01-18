@@ -9,19 +9,20 @@
 */
 
 .container {
-  //position: relative;
+  position: relative;
   width: 100%;
-  max-width: $container-width;
+  max-width: 1600px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 20px;
   box-sizing: border-box;
 }
 
-// For devices larger than 400px
+//Breakpoints 480, 600, 840, 960, 1280, 1440, and 1600dp
+
+// Larger than 480
 @media (#{$bp-larger-than-mobile}) {
   .container {
-    width: $container-width-larger-than-mobile;
-    padding: 0;
+    // width: $container-width-larger-than-mobile;
     display: grid;
     grid-gap: 10px;
     grid-template-columns: minmax(310px, 3fr) minmax(80px, 1fr);
@@ -29,7 +30,7 @@
     grid-template-areas: 
       "main head"
       "main contact"
-      "main fb"
+      "main social"
       "main foot";
   }
 
@@ -49,7 +50,7 @@
   }
 
   .social {
-    grid-area: fb;
+    grid-area: social;
     background-color: rgb(0, 102, 255);
   }
 
@@ -59,12 +60,17 @@
   }
 }
 
-// For devices larger than 550px
-@media (#{$bp-larger-than-phablet}) {
-  .container {
-    width: $container-width-larger-than-phablet;
-  }
-}
+// Larger than 600 (Content grid becomes active)
+@media (#{$bp-larger-than-phablet}) {}
+
+// Larger than 840
+@media (#{$bp-larger-than-tablet}) {}
+
+// Larger than 1280
+@media (#{$bp-larger-than-desktop}) {}
+
+// Larger than 1440
+@media (#{$bp-larger-than-desktophd}) {}
 
 // Clearing
 //––––––––––––––––––––––––––––––––––––––––––––––––––
